@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Alia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="slick.css" type="text/css" />
+    <link rel="stylesheet" href="templatemo-style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .box button {
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid lightblue;
+            cursor: pointer;
+        }
+        /* .modal-body {
+            background-color: rgb(27, 184, 231);
+            padding: 20px;
+        } */
+        .modal-body p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .modal-body h1 {
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .btn-close {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="cd-slider-nav">
+                        <nav class="navbar navbar-expand-lg" id="tm-nav">
+                            <a class="navbar-brand" href="#"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar-supported-content">
+                                <ul class="navbar-nav mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html" data-no="1">Home</a><div class="circle"></div></li>
+                                    <li class="nav-item"><a class="nav-link" href="listmusic.html" data-no="2">List Music</a><div class="circle"></div></li>
+                                    <li class="nav-item selected"><a class="nav-link" href="words.html" data-no="3">Words</a><div class="circle"></div></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-bg-dark">
+            <div class="container">
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal1">Box 1</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal2">Box 2</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal3">Box 3</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal4">Box 4</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal5">Box 5</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal6">Box 6</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal7">Box 7</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal8">Box 8</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal9">Box 9</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal10">Box 10</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal11">Box 11</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal12">Box 12</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal13">Box 13</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal14">Box 14</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal15">Box 15</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal16">Box 16</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal17">Box 17</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal18">Box 18</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal19">Box 19</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal20">Box 20</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal21">Box 21</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal22">Box 22</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal23">Box 23</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal24">Box 24</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal25">Box 25</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal26">Box 26</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal27">Box 27</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal28">Box 28</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal29">Box 29</button></div>
+                <div class="box"><button type="button" data-bs-toggle="modal" data-bs-target="#modal30">Box 30</button></div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h1>TEMPORARY</h1>
+                      <p style="text-align: center; font-family: cursive;">
+                        Everything in life is temporary,
+                        so if things are going good enjoy it because it won't last forever. And if things are going bad, 
+                        don't worry because it can't last forever either.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                     
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h1>Bulan</h1>
+                      <p style="text-align: center; font-family: cursive;">
+                       Kamu seperti bulan,
+                          Indah untuk di pandang.
+                          mustahil untuk digapai.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1>Menyimpan</h1>
+                    <p style="text-align: center; font-family: cursive;">
+                    aku menyimpan hatiku untuk seseorang, dan aku tahu ia tidak mungkin bisa ku miliki
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h1>Hadirmu</h1>
+                  <p style="text-align: center; font-family: cursive;">
+                    Ternyata hadirnya dirimu adalah sebahagian episode bahagiaku.
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Orang Gila</h1>
+                <p style="text-align: center; font-family: cursive;">
+                Orang gila mana yang dah lama tak komunikasi tapi rasa cintanya tak pernah pudar
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Aku Ingin mencintaimu dengan sederhana</h1>
+              <p style="text-align: center; font-family: cursive;">
+                Aku ingin mencintaimu dengan sederhana,
+                dengan kata yang tak sempat diucapkan
+                kayu kepada api yang menjadikannya abu
+                <br>
+                Aku ingin mencintaimu dengan sederhana,
+                dengan isyarat yang tak sempat disampaikan awan kepada hujan yang menjadikannya tiada
+
+                <p style="font-family: Brush Script MT;">Sapardi Djoko Damono</p>
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Langit</h1>
+              <p style="text-align: center; font-family: cursive;">
+                Dari pada jatuh karna mengerja langit,
+                lebih baik berbaring dan menikmati keindahannya.
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1></h1>
+              <p style="text-align: center; font-family: cursive;">
+              Ad astra per aspera..
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1></h1>
+              <p style="text-align: center; font-family: cursive;">
+              Nil desperandum
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1></h1>
+              <p style="text-align: center; font-family: cursive;">
+              Dum Spiro,spero...
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Misal</h1>
+              <p style="text-align: center; font-family: cursive;">
+                Misal tak lagi ku dihatimu,<br>
+                haruskah mengalah
+                <p style="font-family: Brush Script MT;">Misal, Yovie & Nuno</p>
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Menyenangkan</h1>
+              <p style="text-align: center; font-family: cursive;">
+                kamu menyenangkan.<br>
+                Sampai aku lupa cara untuk merelakan
+                <p style="font-family: Brush Script MT;">Misal, Yovie & Nuno</p>
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Present</h1>
+              <p style="text-align: center; font-family: cursive;">
+                “Yesterday is history,
+                tomorrow is a mystery,
+                and today is a gift...
+                that's why they call it present”
+                <p style="font-family: Brush Script MT;">Master Oogway, Kung fu Panda</p>
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Box 1</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Again</h1>
+              <p style="text-align: center; font-family: cursive;">
+              Can we fall in love again?<br>
+              clean up the mess we made,
+              we restart everything and forget about the past
+              we do it all over
+              but we do it right.
+              you are my person and i can't do this without you.
+               
+              </p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Hard</h1>
+                <p style="text-align: center; font-family: cursive;">
+                    Everything was hard... 
+                    <br>
+                    Until we found each other<br>
+                    I wanna give you a soft life
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Aku Ada</h1>
+                <p style="text-align: center; font-family: cursive;">
+                    Kau Tidak Keseorangan... 
+                    <br>
+                   aku adalah orang yang selalu ada dan menunggu kamu di tiap hariku
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- <h1>Aku Ada</h1> -->
+                <p style="text-align: center; font-family: cursive;">
+                    Kalau kau nak tahu notification mesej kau aku setkan lain dari orang lain... 
+                    <br>
+                   sebab aku tunggu setiap hari noti special tu bunyi...
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal17" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Momen</h1>
+                <p style="text-align: center; font-family: cursive;">
+                    "Satu momen dapat mengubah suatu hari, suatu hari dapat mengubah hidup, dan satu kehidupan 
+                    dapat mengubah dunia"
+                    <br>
+                  
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal18" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- <h1>Momen</h1> -->
+                <p style="text-align: center; font-family: cursive;">
+                   Allah lebih mengetahui kebahagiaan jenis apa yang sesuai dengan kita.
+                    <br>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal19" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- <h1>Momen</h1> -->
+                <p style="text-align: center; font-family: cursive;">
+                   "Kekhawatiran tidak menghilangkan masalah di hari esok, namun selalu menghilangkan kedamaian hari ini".
+                    <br>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal20" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- <h1>Momen</h1> -->
+                <p style="text-align: center; font-family: cursive;">
+                  One day... You will arrive at your destination.<br>
+                  But.. right now you're here..<br>
+                  Just enjoy the process..  &#128522;
+                    <br>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal21" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Box 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <!-- Add an image -->
+          <img src="laugh.jpg" alt="Image Description" style="max-width: 50%; height: auto; margin-bottom: 15px;">
+  
+          <!-- Add a video -->
+          <!-- <video controls style="max-width: 100%; height: auto;">
+            <source src="your-video-url.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+  
+          <!-- Existing quote -->
+          <p style="text-align: center; font-family: cursive; margin-top: 15px;">
+           Aku berharap ni bukan kali terakhir aku mendengar gelak tawamu
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal22" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Box 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <!-- Add an image -->
+          <!-- <img src="img/laugh.jpg" alt="Image Description" style="max-width: 50%; height: auto; margin-bottom: 15px;">
+   -->
+          <!-- Add a video -->
+          <video controls style="max-width: 50%; height: auto;">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+  
+          <!-- Existing quote -->
+          <p style="text-align: center; font-family: cursive; margin-top: 15px;">
+           Kau ingat lagi video ni? kau yang buatkan untuk aku walaupun kecil tapi still jadi salah satu fav aku sampai sekarang
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal23" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Box 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <!-- Add an image -->
+          <img src="funny.jpg" alt="Image Description" style="max-width: 50%; height: auto; margin-bottom: 15px;">
+  
+          <!-- Add a video -->
+          <!-- <video controls style="max-width: 100%; height: auto;">
+            <source src="your-video-url.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+  
+          <!-- Existing quote -->
+          <p style="text-align: center; font-family: cursive; margin-top: 15px;">
+           gambar ni paling lawak HAHAHAHA macam mana la cikgu boleh masuk 
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal24" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Box 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <!-- Add an image -->
+          <img src="mostliked.jpg" alt="Image Description" style="max-width: 50%; height: auto; margin-bottom: 15px;">
+  
+          <!-- Add a video -->
+          <!-- <video controls style="max-width: 100%; height: auto;">
+            <source src="your-video-url.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+  
+          <!-- Existing quote -->
+          <p style="text-align: center; font-family: cursive; margin-top: 15px;">
+           Ni adalah fav gambar aku, Aku harap ni bukan kali terakhir aku tengok senyuman kau.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal25" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1>Tak Selalu Memiliki</h1>
+                  <p style="text-align: center; font-family: cursive;">
+                    Tuhan, tolonglah<br>
+                    Benar, Aku inginkan dirinya
+                    <p style="font-family: Brush Script MT;">Tak Selalu Memiliki, lyodra</p>
+                   
+                  </p>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal26" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1></h1>
+                  <p style="text-align: center; font-family: cursive;">
+                   Selagi aku hidup, aku tak akan biarkan kau rasa kesunyian...
+                    <!-- <p style="font-family: Brush Script MT;">Tak Selalu Memiliki, lyodra</p> -->
+                   
+                  </p>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal27" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1></h1>
+                  <p style="text-align: center; font-family: cursive;">
+                   Kadang-kadang aku rasa sedih bila kau kata sunyi.. <br> 
+                   Sedangkan aku setiap masa fikir kau..
+                    <!-- <p style="font-family: Brush Script MT;">Tak Selalu Memiliki, lyodra</p> -->
+                   
+                  </p>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal28" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1></h1>
+                  <p style="text-align: center; font-family: cursive;">
+                   Aku bangga dengan kau dari hari pertama kita kenal, hari ni dan masa depan <br> 
+                   Sebab kau mampu hadap semua ujian tu dengan baik. Kau kuat Alia
+                    <!-- <p style="font-family: Brush Script MT;">Tak Selalu Memiliki, lyodra</p> -->
+                  </p>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal29" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">Box 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1></h1>
+                  <p style="text-align: center; font-family: cursive;">
+                   Terima kasih sebab jadi semangat untuk aku terus hidup<br> 
+                   Kau betul-betul dah ubah hidup aku dari seorang yang mengalah kepada seorang yang tabah
+                    <!-- <p style="font-family: Brush Script MT;">Tak Selalu Memiliki, lyodra</p> -->
+                  </p>
+              </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+  </div>
+        <div class="modal fade" id="modal30" tabindex="-1" aria-labelledby="modal30Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal30Label">Box 30</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: center; font-family: cursive;">
+                        I love you..<br>
+                        I Love You In Every Universe.
+                         <p style="font-family: Brush Script MT;">Dr. Stephen Strange</p>
+                       </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <footer class="row mx-auto tm-footer">
+                <!-- <div class="col-md-6 px-0">Copyright 2021 Astro Motion Company Limited. All rights reserved.</div> -->
+                <!-- <div class="col-md-6 px-0 tm-footer-right">Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a></div> -->
+            </footer>
+        </div>
+    </div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="templatemo-script.js"></script>
+</body>
+</html>

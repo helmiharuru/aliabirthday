@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylecard.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <p>Happy Birthday</p>
+          <div class="cake">
+            <div class="top-layer"></div>
+            <div class="middle-layer"></div>
+            <div class="bottom-layer"></div>
+            <div class="candle"></div>
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        <p>Hi Alia Maisarah, Selamat Hari Jadi yang ke 24 aku harap kau baik baik je. Alhamdullilah walaupun busy 
+          buat sistem aku dapat jugak settlekan benda ni untuk kau. Aku harap kau suka hehehe okay la enjoy your present...
+        </p>
+        <button type="button" id="delayedButton" class=" btn btn-success hidden"  onclick="redirect()">Next</button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(function() {
+            var button = document.getElementById('delayedButton');
+            button.classList.remove('hidden');
+          }, 8000); // 10 seconds delay (10000 milliseconds)
+        });
+
+        function redirect() {
+          window.location.href = "home.html";
+        }
+      </script>
+  </body>
+</html>
